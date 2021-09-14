@@ -5,6 +5,7 @@ import Signup from "../views/auth/Signup.vue";
 import CreatePlaylist from "../views/playlists/CreatePlaylist.vue";
 import PlaylistDetails from "../views/playlists/PlaylistDetails.vue";
 import UserPlaylists from "../views/playlists/UserPlaylists.vue";
+import NotFound from "../views/NotFound.vue";
 import { projectAuth } from "../firebase/config";
 
 const requireAuth = (_to, _from, next) => {
@@ -52,6 +53,7 @@ const routes = [
     component: UserPlaylists,
     beforeEnter: requireAuth,
   },
+  { path: "/:pathMatch(.*)*", component: NotFound },
 ];
 
 const router = createRouter({
