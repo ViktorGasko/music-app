@@ -1,7 +1,7 @@
 # muso-ninjas
 
 Ispired by [course](https://www.udemy.com/course/build-web-apps-with-vuejs-firebase/). Changed and added some components,
-changed styling, actually plays mp3 files (.mpeg) ...
+changed styling, actually plays mp3 files (.mpeg) ... (sign up email can be made up)
 
 ## Project setup
 
